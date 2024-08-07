@@ -1,0 +1,365 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #0B8973;
+}
+
+.entry {
+    float: left;
+    width: 160px;
+    border: solid black 1px;
+    height: 950px;
+    padding: 18px;
+    margin: 8px;
+    background: white;
+    line-height: 1.4;
+    /*font: 13.5pt 'Robotxo Condensed';*/
+    position: relative;
+    z-index: 5;
+    border-radius: 6px;
+}
+
+.entry-default-text {
+    /*float: right;*/
+    width: 320px;
+    border: solid black 1px;
+    padding: 17px;
+    background: white;
+    line-height: 1.4;
+    position: relative;
+    z-index: 5;
+}
+.entry.parent {
+    padding: 12px;
+}
+
+.entry-infobox a, .entry-default-text a {
+    color: #0B8973;
+}
+.entry.priority_vote {
+    height: 450px;
+    width:322px;
+    margin:25px 23px 25px 25px;
+    padding:24px;
+}
+.entry.priority_vote p {
+    margin-bottom: 0.7rem;
+}
+#priorityVotes {
+    margin-left:10px;
+    background-color:#f7f7f7;
+}
+
+.about_us {
+    margin:30px 17px 15px;
+}
+
+.entry-infobox img {
+    border: red 1px;
+    display: block;
+    text-align: center;
+}
+
+body {
+    background-color: #0678be; /*#FCFCBD;*/
+    font-family: "arial", "helvetica", sans-serif;
+    /*padding-top: 50px;*/
+    padding-bottom: 20px;
+
+}
+
+li {
+    padding: 0 0 1em 0;
+    margin: 0;
+}
+
+h5 a {
+    color: #075A0A;
+}
+
+a:hover, a:active {
+    text-decoration: none;
+    color: #075A0A !important;
+}
+
+.child a:active, h5 a:visited, h5 a:active {
+    color: #075A0A;
+}
+
+.child a:hover, h5 a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: auto;
+}
+
+@media screen and (orientation: portrait) {
+    img.ri {
+        max-width: 90%;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    img.ri {
+        max-height: 90%;
+    }
+}
+
+
+button {
+    font: bold 0.9em arial, verdana, helvetica, sans-serif;
+}
+
+#sidebar ul {
+    /*padding: 0 1.2em;*/
+}
+
+
+.container.votes ul li{
+    /*list-style-position: outside;  margin-left: .5em; text-indent:-.5em;*/
+    list-style-type:none;
+}
+p.info-title {
+    font-size: 120%;
+}
+
+h2, h4, h5 {
+    font-size: 1em;
+    color: #0c0b3e;
+}
+
+.fa-li {
+    margin-top: -.25em;
+    /*left: 30px !important;*/
+}
+i.fas.fa-leaf.fa-2x, i.fas.fa-exclamation-triangle.fa-2x{
+    font-size: 1.4em;
+}
+.fa-leaf {
+    color: #4EAB07; //#4EAB05; //#075A0A; //#82BC00; //#4EAB07;
+}
+.fa-minus-circle {
+    color: #b0b0b0;
+}
+
+.fa-exclamation-triangle {
+    color: #ff0000;
+    /*line-height: 18px;*/
+    /*vertical-align: top;*/
+}
+
+.fa-file-pdf {
+    color: #ff0000;
+}
+.fa-file-pdf.fa-2x {
+    font-size:1.9em;
+}
+
+p.close {
+    /*margin-top: -4px;*/
+    /*margin-right: -8px;*/
+}
+
+button#close.close {padding: 5px 9px 0;}
+
+#map-help, #endorsement-process {
+    background-color: #fff4c1;
+    border: 2px outset #fff4c1;
+    margin-right: 22px;
+    display: inline;
+    float: left;
+}
+
+.my-legend ul.legend-labels li span {
+    display: block;
+    float: left;
+    height: 15px;
+    width: 96px;
+}
+
+.entry-default-text p {
+    line-height: 1.2em;
+}
+
+.clear {
+    clear: both;
+}
+
+.child {
+    /*width: 192px;*/
+    /*height: 98%;*/
+    /*line-height: 150%;*/
+    padding: 2% 4% 5% 7%;
+    border: solid #E9E9E9 1px;
+    background-color: #ffffff;
+    font: 'Roboto Condensed', sans-serif;
+    /*font: italic small-caps bold 16px/2 cursive;*/
+    /*font-size: 15.5px;*/
+}
+
+.child p {
+    padding-top: 10px;
+    margin-bottom: .5rem;
+    font-family: 'Roboto', sans-serif;
+    line-height: 145%;
+
+}
+
+.child a, a {
+    color: #212529;
+}
+.child-header, .score  {
+    font: 600 12pt 'Roboto', sans-serif;
+    background-color: #f5f5f5; // #efefef; /*#e7e7e7;!* #0c0b3e;*/
+    color: black;
+    margin-top: 7px;
+    display: block;
+    border-radius: 6px;
+    text-align: center;
+    padding: 8px 4px;
+}
+.score {
+    font: 600 14pt 'Roboto', sans-serif;
+    /*display: inline-block;*/
+    /*width:41px;*/
+    /*border-radius: 5px;*/
+    display: inline-flex;
+    width: 43px;
+    border-radius: 5px;
+    height: 43px;
+    align-items: center;
+    justify-content: space-around;
+
+
+}
+span > i {
+    padding-right: 10px;
+}
+
+.fa-exclamation-triangle:before {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 900;
+    color: #E53935; /* #E03131; /* red #C40015 */
+}
+
+.circle{
+    white-space:nowrap;
+    width:70px;
+    height:20px;
+    border-radius:5px;
+    font-size:12px;
+    color:#fff;
+    line-height:20px;
+    text-align:center;
+    background:#515151;
+    font-family: 'Archivo Narrow', serif;
+    margin-left:-5em;
+}
+
+.wide105 {width:150px;}
+
+.infobox img.img-fluid {
+    height: 162px;
+    margin-bottom: 6px;
+    border-radius:6px;
+
+}
+
+div#scorecard-legend {
+    float: left;
+    /*width: calc(100% - 370px);*/
+    /*min-width: 360px;*/
+}
+
+div#scorecard-legend ul {
+    padding: 2rem 0;
+}
+div#scorecard-legend ul li {
+    display: block;
+    float: left;
+    font-size: 12px;
+    text-align: center;
+    width: 63px;
+    padding: 0;
+}
+
+div#scorecard-legend ul li span {
+    display: block;
+    height: 15px;
+}
+
+button.btn {font-size: small;}
+
+button.btn.btn-outline-primary {
+    color: #085A0A;
+    border: solid #085A0A 1px;
+}
+button.btn.btn-outline-primary:hover {
+    color: #fff;
+    background-color:  #085A0A;
+    /*#007bff;*/
+    border-color:  #085A0A;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled).active, .btn-outline-primary:not(:disabled):not(.disabled):active, .show>.btn-outline-primary.dropdown-toggle {
+    color: #fff !important;
+    box-shadow: none !important;
+    background-color: #085A0A !important;
+    border: 1px solid #085A0A !important;
+}
+
+.btn-outline-primary.focus, .btn-outline-primary:focus {
+    box-shadow: none  !important;
+    color: #085A0A;
+    border: none;
+}
+
+.signup {
+    background-color: #d80029 !important;
+    border-color:#d80029 !important;
+}
+
+.signup:hover {
+    color: #fff !important;
+}
+
+.back-to-top {
+    background-color: #085A0A !important;
+    border-color:#085A0A !important;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+    z-index: 99;
+}
+
+.back-to-top:hover {
+    color: #fff !important;
+}
+
+.find_legislator {
+    background-color: #46539b !important;
+    border-color:#46539b !important;
+}
+
+.find_legislator:hover {
+    color: #fff !important;
+}
+
+.btn.focus, .btn:focus {
+    outline: 0  !important;
+    box-shadow: 0 0 0 0.2rem  #085A0A;  !important;
+}
+
+span.score {
+    padding: 10px 5px 10px 5px;
+    font: 600 11pt 'Roboto', sans-serif;
+}
+
+.bill-bold {
+    font-weight: bold;
+}
