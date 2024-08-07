@@ -330,6 +330,9 @@ button.btn.btn-outline-primary:hover {
 .back-to-top {
     background-color: #085A0A !important;
     border-color:#085A0A !important;
+}
+
+#back-to-top {
     position: fixed;
     bottom: 25px;
     right: 25px;

@@ -38,6 +38,27 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.7/handlebars.js"
           integrity="sha256-3kxM38zABJY692X6ViIlt9FsBimhck0ZlsLtuA7R+0Y="
           crossorigin="anonymous"></script>
+  <link rel='preload' href='https://static.everyaction.com/ea-actiontag/at.js' as='script' crossorigin='anonymous'>
+  <link rel='preload' href='https://static.everyaction.com/ea-actiontag/at.min.css' as='style'>
+  <script type='text/javascript' src='https://static.everyaction.com/ea-actiontag/at.js' crossorigin='anonymous'></script>
+  <script type="text/javascript">
+            $(document).ready(function(){
+          $(window).scroll(function () {
+              if ($(this).scrollTop() > 50) {
+                $('#back-to-top').fadeIn();
+              } else {
+                $('#back-to-top').fadeOut();
+              }
+            });
+            // scroll body to 0px on click
+            $('#back-to-top').click(function () {
+              $('body,html').animate({
+                scrollTop: 0
+              }, 400);
+              return false;
+            });
+        });
+          </script>
 </head>
 <body>
 <header class="scorecard-header">
@@ -81,7 +102,7 @@
           <a class="text-sm-center nav-link active find_legislator"
              href="https://www.legis.state.pa.us/cfdocs/legis/home/findyourlegislator/" target="_blank">Find My Legislator</a> &nbsp; &nbsp;
           <a class="text-sm-center nav-link active signup"
-             href="https://action.conservationpa.org/a/scorecard-sign-up" target="_blank">Signup</a>
+             href="#signup">Signup</a>
         </ul>
       </div>
     </div>
@@ -142,6 +163,16 @@
           time.</p>
         <p>We invite you to look up your lawmakers to see how they scored, and then ask them to do better in the next legislative session – or thank them if they’re one of our champs!</p>
       </div>
+      <hr />
+      <a name="signup"></a>
+      <div class="ngp-form"
+        data-form-url="https://secure.everyaction.com/v1/Forms/vEGVOvonG0C7WOycMWF39Q2"
+              data-fastaction-endpoint="https://fastaction.ngpvan.com"
+        data-inline-errors="true"
+        data-fastaction-nologin="true"
+              data-mobile-autofocus="false">
+      </div>
+      <hr />
       <div id="logos">
         <div class="logo-item logo-item-cvpa">
           <a target="_blank"
@@ -159,6 +190,8 @@
       </div>
     </div>
   </div>
+
+  <a id="back-to-top" href="#" class="btn btn-lg btn-primary back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
 
 </div><!-- /container -->
 
